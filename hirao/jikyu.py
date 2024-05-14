@@ -18,5 +18,5 @@ fmt = """
 """
 desc = fmt.format(jikyu,jikan,kyuryou)
 print(desc)
-
+print("TEST")
 print("終了")
