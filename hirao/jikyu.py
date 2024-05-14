@@ -18,3 +18,4 @@ fmt = """
 """
 desc = fmt.format(jikyu,jikan,kyuryou)
 print(desc)
+print("終了")
