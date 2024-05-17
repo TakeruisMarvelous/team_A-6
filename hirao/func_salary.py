@@ -9,7 +9,7 @@ tax_rate_over_than_a_milion = 0.2#100万より大きい時の税率
 
 allowance = 0#支給額の初期化
 tax = 0#税額の初期化
-salary = 10000
+
 
 def calc_salary(salary):
     if(salary<=1000000):
@@ -23,8 +23,12 @@ def calc_salary(salary):
         allowance = salary + 1000000 - tax#支給額の計算
     return allowance,tax
 
-allowance,tax = calc_salary(salary)
-
-print("支給額:" + str(allowance) + "、" +"税額:" + str(tax),end = "")#支給額と税額の表示
+print("人数の入力")
+num = int(input())
+for i in range(num):
+    print("給与")
+    salary = int(input())
+    allowance,tax = calc_salary(salary)
+    print("支給額:" + str(allowance) + "、" +"税額:" + str(tax))#支給額と税額の表示
 
 
